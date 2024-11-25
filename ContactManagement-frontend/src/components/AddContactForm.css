@@ -1,0 +1,83 @@
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+form input {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+}
+
+form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit Button */
+form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(33, 150, 243, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    box-shadow: 0 8px 15px rgba(33, 150, 243, 0.5);
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

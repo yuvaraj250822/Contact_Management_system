@@ -1,0 +1,85 @@
+/* Contact List Container */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color:skyblue;
+}
+/* Individual Contact Item */
+div > div {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+div > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Details */
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e53935;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+    }
+
+    div > div {
+        padding: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
